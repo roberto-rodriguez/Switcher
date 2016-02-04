@@ -1,0 +1,1 @@
+set JAVA_OPTS=%JAVA_OPTS% -ea -Dappserver.domain=http://%DOMAIN_VARS%:8080 -Dmongo.location=%DOMAIN_VARS% -Dspring.profiles.active="dev-local"

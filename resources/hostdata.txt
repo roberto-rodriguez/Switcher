@@ -1,0 +1,8 @@
+Roberto aio1ac14.devvpc.vocal-dev.com
+QA8 QA8OQUI1.QA8.VOCAL-QA.COM
+QA7 QA7VQUI2.QA7.VOCAL-QA.COM
+QA6 QA6VQUI1.QA6.VOCAL-QA.COM
+QA6.2 QA6VQUI2.QA6.VOCAL-QA.COM
+Badger hdap-int.badger.vocal-dev.com
+Panther hdap-int.panther.vocal-dev.com
+Turkey hdap-int.turkey.vocal-dev.com
