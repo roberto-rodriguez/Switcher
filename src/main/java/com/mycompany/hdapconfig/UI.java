@@ -29,7 +29,7 @@ public class UI extends javax.swing.JFrame {
      */
     public UI() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Environmnet Configuration Management");
+        setTitle("Environment Configuration Management");
      initComponents();
         try {
             if((validSettings = Main.loadSettings()) == false){
@@ -47,7 +47,7 @@ public class UI extends javax.swing.JFrame {
     }
 
     public void initMyComponents() throws FileNotFoundException, IOException {
-        currentHostLabel.setText("Current Environmnet: " + Main.loadCurrentHost());
+        currentHostLabel.setText("Current Environment: " + Main.loadCurrentHost());
         TableModel model = Main.buildTableModel();
         tabla.setModel(model);
         tabla.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -70,8 +70,8 @@ public class UI extends javax.swing.JFrame {
 
         Main.switchHost(hostName, hostValue);
 
-        result.setText("Environmnet switched from " + currentHost + " to " + hostName + ".");
-        currentHostLabel.setText("Current Environmnet: " + hostName);
+        result.setText("Environment switched from " + currentHost + " to " + hostName + ".");
+        currentHostLabel.setText("Current Environment: " + hostName);
         }
     }
 
@@ -117,7 +117,7 @@ public class UI extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tabla);
 
-        jButton1.setText("Switch Environmnet");
+        jButton1.setText("Switch Environment");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

@@ -31,8 +31,11 @@
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jLabel3" max="32767" attributes="0"/>
-                  <Component id="jLabel1" alignment="1" pref="869" max="32767" attributes="0"/>
-                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jLabel1" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jScrollPane1" min="-2" pref="794" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -83,7 +86,7 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="-How use Switcher?&#xa; Once configured, you will be shown a list with the environmnets, you just need&#xa; to select one and hit the &quot;Switch&quot; button and restart the server.&#xa; Yes, that&apos;s it!!!&#xa;&#xa;-How configure Switcher?&#xa;  1- In your httpd.conf file, comment ALL the lines describing specific environmnet&#xa;&#x9;Example:&#xa;&#x9;#ProxyPass /appserver http://aio1ac14.devvpc.vocal-dev.com:8080/appserver&#xa;  2- In your httpd.conf file, add this line:  Include conf/domains.conf&#xa;  3- In Intellig, go to Configurations and clean the field VM options&#xa;  3- Open Swticher, go to File &gt; Settings, and configure: &#xa;       -JVM installation directory&#xa;       -Apache installation directory &#xa;       -Tomcat installation directory&#xa;&#xa;-How does Switcher works?  &#xa;  Switcher will not modify any of your existing configuration files.&#xa;&#xa;  Instead it will create the file %APACHE%/conf/domains.conf&#xa;  (wich you previously included in your httpd.conf file)&#xa;  and then write the configurations needed to connect to the specified host.&#xa;&#xa;  Also it will creates the file %TOMCAT%/bin/setenv.bat&#xa;  This file (if exist) is read by Tomcat to load JVM settings.&#xa;  So this will be used by switcher to set the JVM Options we used to&#xa;  specify in Intellij (including the specified host)&#xa;  &#xa;-Who to ask if need help with Switcher?&#xa; You may contact the author at: Roberto.Rodriguez@vonage.com &#xa;&#xa;-Can I see the source code?&#xa; Yes, you can find the source code at https://github.com/roberto-rodriguez/Switcher&#xa; Pull Requests are accepted.&#xa;&#xa; "/>
+            <Property name="text" type="java.lang.String" value="-How use Switcher?&#xa; Once configured, you will be shown a list with the environmnets, you just need&#xa; to select one and hit the &quot;Switch&quot; button and restart the server.&#xa; Yes, that&apos;s it!!!&#xa;&#xa;-How configure Switcher?&#xa;  1- In your httpd.conf file, comment ALL the lines describing specific environmnet&#xa;&#x9;Example:&#xa;&#x9;#ProxyPass /appserver http://aio1ac14.devvpc.vocal-dev.com:8080/appserver&#xa;  2- In your httpd.conf file, add this line:  Include conf/domains.conf&#xa;  3- In Intellig, go to Configurations and clean the field VM options&#xa;  3- Open Swticher, go to File &gt; Settings, and configure: &#xa;       -JVM installation directory&#xa;       -Apache installation directory &#xa;       -Tomcat installation directory&#xa;&#xa;-How does Switcher works?  &#xa;  Switcher will not modify any of your existing configuration files.&#xa;&#xa;  Instead it will create the file %APACHE%/conf/domains.conf&#xa;  (wich you previously included in your httpd.conf file)&#xa;  and then write the configurations needed to connect to the specified host.&#xa;&#xa;  Also it will creates the file %TOMCAT%/bin/setenv.bat&#xa;  This file (if exist) is read by Tomcat to load JVM settings.&#xa;  So this will be used by switcher to set the JVM Options we used to&#xa;  specify in Intellij (including the specified host)&#xa;  &#xa;-Who to ask if need help with Switcher?&#xa; You may contact the author at: Roberto.Rodriguez@vonage.com &#xa;&#xa;-Can I see the source code?&#xa; Yes, you can find the source code at https://github.com/roberto-rodriguez/Switcher&#xa; Pull Requests are accepted."/>
           </Properties>
         </Component>
       </SubComponents>
